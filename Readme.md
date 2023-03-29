@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Абрамкин](https://up.htmlacademy.ru/adaptive/28/user/146767).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Котов](https://htmlacademy.ru/profile/evgeniy_kotov).
 
 ---
 
