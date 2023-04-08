@@ -42,9 +42,33 @@
 
     <main class="form-page">
 
-      <!-- Content here -->
+			<h1 class="form-page__header main-header">Подбор программы</h1>
 
-      <!-- /Content here -->
+			<em class="form-page__requirement">Заполните анкету, и мы подберём программу питания для вашего кота</em>
+
+			<form class="form-page__program-selection program-selection-form" name="program-selection-form" action="https://echo.htmlacademy.ru" method="get">
+
+				<section class="program-selection-form__personal-information">
+					<fieldset class="groups-form-elements">
+						<legend>
+							<h2 class="visually-hidden">Сообщите имя, вес и возраст вашего питомца</h2>
+						</legend>
+						<label class="groups-form-elements__input-field input-field">
+							<span class="input-field__input-name">Имя:*</span>
+							<input class="input-field__input-area" type="text" name="name-of-the-cat" placeholder="Барсик" required>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<span class="input-field__input-name">Вес (кг):*</span>
+							<input class="input-field__input-area" type="number" name="weight" placeholder="7" required>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<span class="input-field__input-name">Возраст (лет):*</span>
+							<input class="input-field__input-area" type="number" name="age" placeholder="7" required>
+						</label>
+					</fieldset>
+				</section>
+
+			</form>
 
     </main>
 
