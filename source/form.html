@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+  </head>
+
+  <body class="page__body">
+
+    <header class="main-header">
+
+      <div class="main-header__wrapper">
+
+        <a class="main-header__logo-with-icon company-logo" title="Вы на Главной странице">
+          <img class="company-logo__icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Cat Energy иконка логотипа.">
+          <img class="company-logo__font" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
+        </a>
+
+        <button class="main-header__toggle">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+
+      </div>
+
+      <nav class="main-nav">
+
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--current">
+            <a class="main-nav__link" href="index.html" title="Перейти на страницу Главная">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html" title="Перейти на страницу Каталога">Каталог продукции</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Подбор программы</a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </header>
+
+    <main class="form-page">
+
+			<h1 class="form-page__header main-header">Подбор программы</h1>
+
+			<em class="form-page__requirement">Заполните анкету, и мы подберём программу питания для вашего кота</em>
+
+			<form class="form-page__program-selection program-selection-form" name="program-selection-form" action="https://echo.htmlacademy.ru" method="get">
+
+				<section class="program-selection-form__personal-information">
+					<fieldset class="groups-form-elements">
+						<legend>
+							<h2 class="visually-hidden">Сообщите имя, вес и возраст вашего питомца</h2>
+						</legend>
+						<label class="groups-form-elements__input-field input-field">
+							<span class="input-field__input-name">Имя:*</span>
+							<input class="input-field__input-area" type="text" name="name-of-the-cat" placeholder="Барсик" required>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<span class="input-field__input-name">Вес (кг):*</span>
+							<input class="input-field__input-area" type="number" name="weight" placeholder="7" required>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<span class="input-field__input-name">Возраст (лет):*</span>
+							<input class="input-field__input-area" type="number" name="age" placeholder="7" required>
+						</label>
+					</fieldset>
+				</section>
+
+				<section class="program-selection-form__program-selection">
+					<fieldset class="groups-form-elements">
+						<legend>
+							<h2 class="visually-hidden">Выберите программу</h2>
+						</legend>
+						<label class="groups-form-elements__input-field input-field">
+							<input class="input-field__input-radio" type="radio" name="diet-or-weight-gain" checked>
+							<span class="input-field__input-name">Похудение</span>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
+							<span class="input-field__input-name">Набор массы</span>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
+							<span class="input-field__input-name">Не знаю (нужен ваш совет)</span>
+						</label>
+					</fieldset>
+				</section>
+
+				<section class="program-selection-form__contacts-owner">
+					<fieldset class="groups-form-elements">
+						<legend>
+							<h2 class="form-title">Контактные данные (владельца кота)</h2>
+						</legend>
+						<label class="groups-form-elements__input-field input-field">
+							<span class="input-field__input-name">E-mail:*</span>
+							<input class="input-field__input-area" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<span class="input-field__input-name">телефон:*</span>
+							<input class="input-field__input-area" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+						</label>
+					</fieldset>
+				</section>
+
+				<section class="program-selection-form__comments">
+					<h2 class="form-title">Комментарий</h2>
+					<textarea class="comment-area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+				</section>
+
+				<section class="program-selection-form__add-info">
+					<fieldset class="groups-form-elements">
+						<legend>
+							<h2 class="form-title">Дополнительно</h2>
+						</legend>
+						<label class="groups-form-elements__input-field input-field">
+							<input class="input-field__input-checkbox" type="checkbox" name="sweetener">
+							<span class="input-field__input-name">Сахарозаменитель</span>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<input class="input-field__input-checkbox" type="checkbox" name="drinking-water">
+							<span class="input-field__input-name">Питьевая вода</span>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<input class="input-field__input-checkbox" type="checkbox" name="milk">
+							<span class="input-field__input-name">Молоко</span>
+						</label>
+						<label class="groups-form-elements__input-field input-field">
+							<input class="input-field__input-checkbox" type="checkbox" name="vitamins">
+							<span class="input-field__input-name">Витамины</span>
+						</label>
+					</fieldset>
+				</section>
+
+				<section class="program-selection-form__submitting-a-form">
+          <h2 class="visually-hidden">Отправьте заявку и ожидайте. Мы обязатьельно с Вами свяжемся!</h2>
+					<button class="button-event" type="submit">
+						<span class="button-event__text">
+							Отправить заявку
+						</span>
+					</button>
+					<em class="text-footnote">* - Обязательные поля</em>
+				</section>
+
+			</form>
+
+    </main>
+
+		<footer class="main-footer">
+
+			<section class="main-footer__location location">
+
+				<h2 class="visually-hidden">Наши контактные данные</h2>
+
+				<div class="location__wrapper">
+
+					<em class="location__offer">Приглашаем к сотрудничеству дилеров!</em>
+
+					<address class="location__addresses addresses">
+						<span class="addresses__address">ул. Большая Конюшенная, д. 19/8</span>
+						<span class="addresses__address">Санкт-Петербург</span>
+					</address>
+
+				</div>
+
+				<img class="location__map" src="img/location.jpg" width="320" height="362" alt="Наша геопозиция: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
+
+			</section>
+
+			<section class="main-footer__social">
+
+				<h2 class="visually-hidden">Дополнительная навигация</h2>
+
+        <a class="main-footer__logo-font company-logo" title="Вернуться на Главную">
+          <img class="company-logo__font" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
+        </a>
+
+				<ul class=" main-footer__list">
+					<li class="main-footer__item">
+						<a class="main-footer__link-social" href="#" title="Перейти в группу">
+							<span class="visually-hidden">Мы ВКонтакте</span>
+						</a>
+					</li>
+					<li class="main-footer__item">
+						<a class="main-footer__link-social" href="#" title="Перейти на канал">
+							<span class="visually-hidden">Наш канал на YouTube</span>
+						</a>
+					</li>
+					<li class="main-footer__item">
+						<a class="main-footer__link-social" href="#" title="Перейти на канал">
+							<span class="visually-hidden">Наш канал в Telegramm</span>
+						</a>
+					</li>
+				</ul>
+
+        <a class="main-footer__logo-with-icon developer-company-logo" title="Вернуться на Главную">
+          <span class="developer-company-logo__font">HTML Academy</span>
+          <img class="developer-company-logo__icon" src="img/logo-developer-company.svg" width="27" height="34" alt="HTML Academy.">
+        </a>
+
+			</section>
+
+		</footer>
+
+  </body>
+</html>
