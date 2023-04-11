@@ -14,7 +14,7 @@
 
         <a class="main-header__logo-with-icon company-logo" title="Вы на Главной странице">
           <img class="company-logo__icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Cat Energy иконка логотипа.">
-          <img class="company-logo__font" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
+          <img class="company-logo__font company-logo__font--header-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
         </a>
 
         <button class="main-header__toggle">
@@ -46,6 +46,8 @@
       <h1 class="visually-hidden">Cat Energy - Функциональное питание для котов. Каталог продукции и подбор программы.</h1>
 
       <section class="promo">
+
+        <div class="promo__overlay"></div>
 
         <h2 class="promo__header header-page">Функциональное питание для котов</h2>
 
@@ -116,12 +118,16 @@
 
         <p class="example__paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
 
-        <dl class="example__description-list description-list-example">
-          <dt class="description-list-example__value">5 кг</dt>
-          <dd class="description-list-example__property">снижение веса</dd>
-          <dt class="description-list-example__value">60 дней</dt>
-          <dd class="description-list-example__property">затрачено времени</dd>
-        </dl>
+        <div class="example__description-wrapper">
+          <dl class="example__description-list description-list-example">
+            <dt class="description-list-example__value">5 кг</dt>
+            <dd class="description-list-example__property">снижение<br> веса</dd>
+          </dl>
+          <dl class="example__description-list description-list-example">
+            <dt class="description-list-example__value">60 дней</dt>
+            <dd class="description-list-example__property">затрачено<br> времени</dd>
+          </dl>
+        </div>
 
         <dl class="example__description-list description-list-cost">
           <dt class="description-list-cost__value">Затраты на питание:</dt>
@@ -160,22 +166,22 @@
         <h2 class="visually-hidden">Дополнительная навигация</h2>
 
         <a class="main-footer__logo-font company-logo" title="Вернуться на Главную">
-          <img class="company-logo__font" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
+          <img class="company-logo__font company-logo__font--footer-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
         </a>
 
         <ul class=" main-footer__list">
           <li class="main-footer__item">
-            <a class="main-footer__link-social" href="#" title="Перейти в группу">
+            <a class="main-footer__link-social" href="#" title="Перейти в группу">1
               <span class="visually-hidden">Мы ВКонтакте</span>
             </a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__link-social" href="#" title="Перейти на канал">
+            <a class="main-footer__link-social" href="#" title="Перейти на канал">2
               <span class="visually-hidden">Наш канал на YouTube</span>
             </a>
           </li>
           <li class="main-footer__item">
-            <a class="main-footer__link-social" href="#" title="Перейти на канал">
+            <a class="main-footer__link-social" href="#" title="Перейти на канал">3
               <span class="visually-hidden">Наш канал в Telegramm</span>
             </a>
           </li>
