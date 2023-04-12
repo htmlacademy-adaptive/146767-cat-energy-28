@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -91,8 +92,8 @@
 
         <section class="program-selection-form__contacts-owner">
           <fieldset class="groups-form-elements">
-            <legend>
-              <h2 class="form-title">Контактные данные (владельца кота)</h2>
+            <legend class="groups-form-elements__legend">
+              <h2 class="form-title">Контактные данные<br> (владельца кота)</h2>
             </legend>
             <label class="groups-form-elements__input-field input-field">
               <span class="input-field__input-name">E-mail:*</span>
@@ -107,12 +108,14 @@
 
         <section class="program-selection-form__comments">
           <h2 class="form-title">Комментарий</h2>
-          <textarea class="comment-area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <div class="program-selection-form__comments-wrapper">
+            <textarea class="comment-area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
         </section>
 
         <section class="program-selection-form__add-info">
           <fieldset class="groups-form-elements">
-            <legend>
+            <legend class="groups-form-elements__legend">
               <h2 class="form-title">Дополнительно</h2>
             </legend>
             <label class="groups-form-elements__input-field input-field">
@@ -136,7 +139,7 @@
 
         <section class="program-selection-form__submitting-a-form">
           <h2 class="visually-hidden">Отправьте заявку и ожидайте. Мы обязатьельно с Вами свяжемся!</h2>
-          <button class="button-event" type="submit">
+          <button class="button-event button-event--submitting-a-form" type="submit">
             <span class="button-event__text">
               Отправить заявку
             </span>
@@ -195,7 +198,7 @@
           </li>
         </ul>
 
-        <a class="main-footer__logo-with-icon developer-company-logo" title="Вернуться на Главную">
+        <a class="main-footer__logo-with-icon developer-company-logo" href="#" title="Перейти на сайт HTML Academy">
           <span class="developer-company-logo__font">HTML Academy</span>
           <img class="developer-company-logo__icon" src="img/logo-developer-company.svg" width="27" height="34" alt="HTML Academy.">
         </a>

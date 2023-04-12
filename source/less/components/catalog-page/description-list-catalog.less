@@ -1,8 +1,21 @@
 .description-list-catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   font-family: @main-font-family;
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
   color: @main-light-font-color;
+}
+
+.description-list-catalog__value {
+  width: 50%;
+}
+
+.description-list-catalog__property {
+  width: 50%;
+  margin: 0;
+  text-align: right;
 }

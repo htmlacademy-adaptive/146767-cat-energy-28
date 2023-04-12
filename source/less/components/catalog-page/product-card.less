@@ -1,4 +1,33 @@
+.product-card {
+  &--view-all {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.product-card__icon {
+  margin-bottom: 24px;
+}
+
+.product-card__image-wrapper {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card__text-wrapper {
+  width: 50%;
+}
+
 .product-card__header {
+  &--view-all {
+    width: auto;
+    margin-bottom: 8px;
+  }
+  margin: 0;
+  width: 60%;
   font-family: @header-font-family;
   font-style: normal;
   font-weight: 400;
@@ -8,7 +37,14 @@
   color: @main-lighten-font-color;
 }
 
+.product-card__description-list {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .product-card__challenge {
+  margin-bottom: 20px;
   font-family: @main-font-family;
   font-style: normal;
   font-weight: 400;

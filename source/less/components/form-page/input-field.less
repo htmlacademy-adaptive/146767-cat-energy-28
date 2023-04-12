@@ -10,6 +10,25 @@
   color: @main-light-font-color;
 }
 
+.input-field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.input-field__input-radio {
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.input-field__input-checkbox {
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+}
+
 .input-field__input-area {
   width: 100%;
   height: 45px;
@@ -22,11 +41,18 @@
 }
 
 .input-field__input-name {
+  display: block;
+  margin-right: 13px;
+
   &--add-info {
+    margin: 0;
+    flex-grow: 1;
     color: @main-font-color;
   }
 
   &--program-selection {
+    margin: 0;
+    flex-grow: 1;
     color: @main-lighten-font-color;
   }
 }
