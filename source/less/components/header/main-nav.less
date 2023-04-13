@@ -1,0 +1,31 @@
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+.main-nav__item {
+  font-family: @header-font-family;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  border-top: 1px solid #d9d9d9;
+
+  &:last-child {
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.main-nav__link {
+  display: block;
+  color: @main-font-color;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}

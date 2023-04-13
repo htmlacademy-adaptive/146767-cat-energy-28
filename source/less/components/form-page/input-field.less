@@ -1,0 +1,58 @@
+.input-field,
+.input-field__input-area,
+.input-field__input-area::placeholder {
+  font-family: @header-font-family;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: @main-light-font-color;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.input-field__input-radio {
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.input-field__input-checkbox {
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+}
+
+.input-field__input-area {
+  width: 100%;
+  height: 45px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  padding-left: 20px;
+  padding-right: 50px;
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+
+.input-field__input-name {
+  display: block;
+  margin-right: 13px;
+
+  &--add-info {
+    margin: 0;
+    flex-grow: 1;
+    color: @main-font-color;
+  }
+
+  &--program-selection {
+    margin: 0;
+    flex-grow: 1;
+    color: @main-lighten-font-color;
+  }
+}
