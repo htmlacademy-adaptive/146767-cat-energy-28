@@ -29,3 +29,34 @@
   padding-top: 24px;
   padding-bottom: 24px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-nav__list {
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    margin-right: 34px;
+    border-bottom: none;
+    font-size: 18px;
+    line-height: 24px;
+
+    &:last-child {
+      margin-right: 0;
+      border-bottom: none;
+    }
+
+    &--current {
+      border-bottom: 2px solid #68b738;
+    }
+
+    &--current:last-child {
+      border-bottom: 2px solid #68b738;
+    }
+  }
+
+  .main-nav__link {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+}

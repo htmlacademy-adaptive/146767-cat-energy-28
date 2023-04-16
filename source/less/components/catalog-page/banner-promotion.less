@@ -19,6 +19,14 @@
   object-fit: cover;
 }
 
+.banner-promotion__icon {
+  position: absolute;
+  top: 58px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
 .banner-promotion__overlay {
   position: absolute;
   content: "";
@@ -42,4 +50,35 @@
   font-size: 16px;
   line-height: 20px;
   color: @secondary-font-color;
+}
+
+@media (min-width: @tablet-width) {
+  .banner-promotion {
+    padding-top: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 76px;
+  }
+
+  .banner-promotion__container {
+    height: 200px;
+  }
+
+  .banner-promotion__image {
+    height: 200px;
+  }
+
+  .banner-promotion__icon {
+    top: 57px;
+    left: 77px;
+    right: auto;
+    margin: auto;
+  }
+
+  .banner-promotion__text {
+    top: 70px;
+    right: 124px;
+    left: auto;
+    margin: auto;
+  }
 }

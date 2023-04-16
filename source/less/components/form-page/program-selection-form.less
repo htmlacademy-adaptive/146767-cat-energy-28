@@ -5,6 +5,8 @@
 
 .program-selection-form__program-selection {
   padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -22,4 +24,44 @@
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 32px;
+}
+
+@media (min-width: @tablet-width) {
+  .program-selection-form__submitting-a-form {
+    max-width: 533px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 70px;
+    padding-right: 68px;
+    padding-bottom: 72px;
+  }
+
+  .program-selection-form__contacts-owner {
+    padding-bottom: 65px;
+  }
+
+  .program-selection-form__comments {
+    padding-bottom: 65px;
+  }
+
+  .program-selection-form__comments-wrapper {
+    padding-left: 70px;
+    padding-right: 68px;
+  }
+
+  .program-selection-form__add-info {
+    padding-bottom: 54px;
+  }
+
+  .program-selection-form__personal-information {
+    padding-bottom: 70px;
+    border: none;
+  }
+
+  .program-selection-form__program-selection {
+    padding-left: 70px;
+    padding-right: 68px;
+    padding-bottom: 75px;
+    border: none;
+  }
 }

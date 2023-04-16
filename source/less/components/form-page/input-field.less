@@ -13,7 +13,7 @@
 .input-field {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -30,7 +30,7 @@
 }
 
 .input-field__input-area {
-  width: 100%;
+  flex-grow: 1;
   height: 45px;
   box-sizing: border-box;
   border: 1px solid #e7e7e7;
@@ -54,5 +54,34 @@
     margin: 0;
     flex-grow: 1;
     color: @main-lighten-font-color;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .input-field,
+  .input-field__input-area,
+  .input-field__input-area::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .input-field {
+    &--add-info {
+      margin: 0;
+    }
+  }
+
+  .input-field__input-area {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .input-field__input-name {
+    display: block;
+    margin-right: 13px;
+
+    &--add-info {
+      margin: 0;
+    }
   }
 }

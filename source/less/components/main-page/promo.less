@@ -4,7 +4,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .promo__overlay::before {
@@ -53,9 +53,69 @@
 
 .promo__product-image {
   margin: 0 auto;
+
+  &--tab-desktop-only {
+    display: none;
+  }
 }
 
 .promo__button-redirect {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    margin: 0;
+  }
+
+  .promo__overlay {
+    display: none;
+  }
+
+  .promo__header {
+    margin-top: 60px;
+    margin-left: 90px;
+    margin-bottom: 40px;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    color: @main-font-color;
+  }
+
+  .promo__challenge {
+    margin-left: 90px;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+    line-height: 20px;
+    color: @main-font-color;
+  }
+
+  .promo__product-image {
+    position: relative;
+    width: 709px;
+    height: 609px;
+    object-fit: contain;
+
+    &--mobile-only {
+      display: none;
+    }
+
+    &--tab-desktop-only {
+      display: block;
+    }
+  }
+
+  .promo__button-redirect {
+    position: absolute;
+    margin: 0;
+    top: 290px;
+    left: 90px;
+  }
+
+  .promo__button-text {
+    font-size: 20px;
+    line-height: 0px;
+  }
 }

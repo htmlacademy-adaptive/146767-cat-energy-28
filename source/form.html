@@ -27,13 +27,13 @@
       <nav class="main-nav">
 
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html" title="Перейти на страницу Главная">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html" title="Перейти на страницу Каталога">Каталог продукции</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link">Подбор программы</a>
           </li>
         </ul>
@@ -55,35 +55,37 @@
             <legend>
               <h2 class="visually-hidden">Сообщите имя, вес и возраст вашего питомца</h2>
             </legend>
-            <label class="groups-form-elements__input-field input-field">
-              <span class="input-field__input-name">Имя:*</span>
-              <input class="input-field__input-area" type="text" name="name-of-the-cat" placeholder="Барсик" required>
-            </label>
-            <label class="groups-form-elements__input-field input-field">
-              <span class="input-field__input-name">Вес (кг):*</span>
-              <input class="input-field__input-area" type="number" name="weight" placeholder="7" required>
-            </label>
-            <label class="groups-form-elements__input-field input-field">
-              <span class="input-field__input-name">Возраст (лет):*</span>
-              <input class="input-field__input-area" type="number" name="age" placeholder="7" required>
-            </label>
+            <div class="groups-form-elements__wrapper">
+              <label class="groups-form-elements__input-field input-field">
+                <span class="input-field__input-name">Имя:*</span>
+                <input class="input-field__input-area" type="text" name="name-of-the-cat" placeholder="Барсик" required>
+              </label>
+              <label class="groups-form-elements__input-field input-field">
+                <span class="input-field__input-name">Вес (кг):*</span>
+                <input class="input-field__input-area" type="number" name="weight" placeholder="7" required>
+              </label>
+              <label class="groups-form-elements__input-field input-field">
+                <span class="input-field__input-name">Возраст (лет):*</span>
+                <input class="input-field__input-area" type="number" name="age" placeholder="7" required>
+              </label>
+            </div>
           </fieldset>
         </section>
 
         <section class="program-selection-form__program-selection">
-          <fieldset class="groups-form-elements">
+          <fieldset class="groups-form-elements groups-form-elements--program-selection">
             <legend>
               <h2 class="visually-hidden">Выберите программу</h2>
             </legend>
-            <label class="groups-form-elements__input-field input-field">
+            <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
               <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain" checked>
               <span class="input-field__input-name input-field__input-name--program-selection">Похудение</span>
             </label>
-            <label class="groups-form-elements__input-field input-field">
+            <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
               <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
               <span class="input-field__input-name input-field__input-name--program-selection">Набор массы</span>
             </label>
-            <label class="groups-form-elements__input-field input-field">
+            <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
               <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
               <span class="input-field__input-name input-field__input-name--program-selection">Не знаю (нужен ваш совет)</span>
             </label>
@@ -93,21 +95,23 @@
         <section class="program-selection-form__contacts-owner">
           <fieldset class="groups-form-elements">
             <legend class="groups-form-elements__legend">
-              <h2 class="form-title">Контактные данные<br> (владельца кота)</h2>
+              <h2 class="form-title form-title--contacts-owner">Контактные данные (владельца кота)</h2>
             </legend>
-            <label class="groups-form-elements__input-field input-field">
-              <span class="input-field__input-name">E-mail:*</span>
-              <input class="input-field__input-area" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="groups-form-elements__input-field input-field">
-              <span class="input-field__input-name">телефон:*</span>
-              <input class="input-field__input-area" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <div class="groups-form-elements__wrapper">
+              <label class="groups-form-elements__input-field input-field">
+                <span class="input-field__input-name">E-mail:*</span>
+                <input class="input-field__input-area" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="groups-form-elements__input-field input-field">
+                <span class="input-field__input-name">телефон:*</span>
+                <input class="input-field__input-area" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </fieldset>
         </section>
 
         <section class="program-selection-form__comments">
-          <h2 class="form-title">Комментарий</h2>
+          <h2 class="form-title form-title--comments">Комментарий</h2>
           <div class="program-selection-form__comments-wrapper">
             <textarea class="comment-area" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
@@ -116,24 +120,26 @@
         <section class="program-selection-form__add-info">
           <fieldset class="groups-form-elements">
             <legend class="groups-form-elements__legend">
-              <h2 class="form-title">Дополнительно</h2>
+              <h2 class="form-title form-title--add-info">Дополнительно</h2>
             </legend>
-            <label class="groups-form-elements__input-field input-field">
-              <input class="input-field__input-checkbox" type="checkbox" name="sweetener">
-              <span class="input-field__input-name input-field__input-name--add-info">Сахарозаменитель</span>
-            </label>
-            <label class="groups-form-elements__input-field input-field">
-              <input class="input-field__input-checkbox" type="checkbox" name="drinking-water">
-              <span class="input-field__input-name input-field__input-name--add-info">Питьевая вода</span>
-            </label>
-            <label class="groups-form-elements__input-field input-field">
-              <input class="input-field__input-checkbox" type="checkbox" name="milk">
-              <span class="input-field__input-name input-field__input-name--add-info">Молоко</span>
-            </label>
-            <label class="groups-form-elements__input-field input-field">
-              <input class="input-field__input-checkbox" type="checkbox" name="vitamins">
-              <span class="input-field__input-name input-field__input-name--add-info">Витамины</span>
-            </label>
+            <div class="groups-form-elements__wrapper groups-form-elements__wrapper--add-info">
+              <label class="groups-form-elements__input-field input-field input-field--add-info">
+                <input class="input-field__input-checkbox" type="checkbox" name="sweetener">
+                <span class="input-field__input-name input-field__input-name--add-info">Сахарозаменитель</span>
+              </label>
+              <label class="groups-form-elements__input-field input-field input-field--add-info">
+                <input class="input-field__input-checkbox" type="checkbox" name="drinking-water">
+                <span class="input-field__input-name input-field__input-name--add-info">Питьевая вода</span>
+              </label>
+              <label class="groups-form-elements__input-field input-field input-field--add-info">
+                <input class="input-field__input-checkbox" type="checkbox" name="milk">
+                <span class="input-field__input-name input-field__input-name--add-info">Молоко</span>
+              </label>
+              <label class="groups-form-elements__input-field input-field input-field--add-info">
+                <input class="input-field__input-checkbox" type="checkbox" name="vitamins">
+                <span class="input-field__input-name input-field__input-name--add-info">Витамины</span>
+              </label>
+            </div>
           </fieldset>
         </section>
 

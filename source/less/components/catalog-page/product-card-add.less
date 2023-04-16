@@ -1,3 +1,9 @@
+.product-card-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .product-card-add__header {
   margin: 0;
   font-family: @header-font-family;
@@ -7,4 +13,12 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @main-lighten-font-color;
+}
+
+@media (min-width: @tablet-width) {
+  .product-card-add__header {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
 }
