@@ -54,15 +54,14 @@
 
         <em class="promo__challenge">Занялся собой? Займись котом!</em>
 
-        <img class="promo__product-image promo__product-image--mobile-only" src="img/promo-food.png" width="280" height="270" alt="Кошачья еда Cat Energy со вкусом курицы.">
-
-        <img class="promo__product-image promo__product-image--tab-desktop-only" src="img/promo-food.jpg" width="280" height="270" alt="Кошачья еда Cat Energy со вкусом курицы.">
-
         <a class="promo__button-redirect button-redirect" href="form.html" title="Перейти на страницу Подбора программы">
           <span class="promo__button-text button-redirect__text">
             Подобрать программу
           </span>
         </a>
+
+        <img class="promo__product-image" src="img/promo-food.png" width="280" height="270" alt="Кошачья еда Cat Energy со вкусом курицы.">
+
       </section>
 
       <section class="food-options">
@@ -71,7 +70,7 @@
 
         <ul class="food-options__list">
           <li class="food-options__item">
-            <img class="food-options__icon" src="img/weight-loss.svg" width="50" height="53" alt="Стройный чёрный кот на фоне зелёного круга.">
+            <img class="food-options__icon food-options__icon--cat-slim" src="img/weight-loss.svg" width="50" height="53" alt="Стройный чёрный кот на фоне зелёного круга.">
             <div class="food-options__text-wrapper">
               <h3 class="food-options__header">Похудение</h3>
               <p class="food-options__paragraph">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
@@ -81,7 +80,7 @@
             </div>
           </li>
           <li class="food-options__item">
-            <img class="food-options__icon" src="img/weight-gain.svg" width="67" height="50" alt="Крупный чёрный кот на фоне зелёного круга.">
+            <img class="food-options__icon food-options__icon--cat-pro" src="img/weight-gain.svg" width="67" height="50" alt="Крупный чёрный кот на фоне зелёного круга.">
             <div class="food-options__text-wrapper">
               <h3 class="food-options__header">Набор массы</h3>
               <p class="food-options__paragraph">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
@@ -100,22 +99,23 @@
 
         <ol class="manual__list">
           <li class="manual__item">
-            <span class="manual-number">1</span>
+            <span class="manual-number manual-number--number-one">1</span>
             <img class="manual__icon" src="img/nutrient-materials-icon.svg" width="60" height="60" alt="Содержит питательные вещества.">
             <p class="manual__annotation">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="manual__item">
-            <span class="manual-number">2</span>
+            <span class="manual-number manual-number--number-two">2</span>
             <img class="manual__icon" src="img/powdered-icon.svg" width="60" height="60" alt="Имеет порошкообразное состояние.">
             <p class="manual__annotation">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
           <li class="manual__item">
-            <span class="manual-number">3</span>
+            <span class="manual-number manual-number--number-three
+            ">3</span>
             <img class="manual__icon" src="img/food-order-icon.svg" width="60" height="60" alt="Изменяет порядок приёма пищи.">
             <p class="manual__annotation">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="manual__item">
-            <span class="manual-number">4</span>
+            <span class="manual-number manual-number--number-four">4</span>
             <img class="manual__icon" src="img/fast-result-icon.svg" width="60" height="60" alt="Даёт быстрый эффект.">
             <p class="manual__annotation">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
@@ -125,30 +125,36 @@
 
       <section class="example">
 
-        <h2 class="example__header header-section">Живой пример</h2>
+        <div class="example__content-container">
 
-        <p class="example__paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <div class="example__text-container">
 
-        <div class="example__description-container">
-          <div class="example__description-wrapper">
-            <dl class="example__description-list description-list-example">
-              <dt class="description-list-example__value">5 кг</dt>
-              <dd class="description-list-example__property">снижение веса</dd>
-            </dl>
-            <dl class="example__description-list description-list-example">
-              <dt class="description-list-example__value">60 дней</dt>
-              <dd class="description-list-example__property">затрачено времени</dd>
-            </dl>
+            <h2 class="example__header header-section">Живой пример</h2>
+
+            <p class="example__paragraph">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+
+            <div class="example__description-container">
+              <div class="example__description-wrapper">
+                <dl class="example__description-list description-list-example">
+                  <dt class="description-list-example__value">5 кг</dt>
+                  <dd class="description-list-example__property">снижение веса</dd>
+                </dl>
+                <dl class="example__description-list description-list-example">
+                  <dt class="description-list-example__value">60 дней</dt>
+                  <dd class="description-list-example__property">затрачено времени</dd>
+                </dl>
+              </div>
+              <dl class="example__description-list description-list-cost">
+                <dt class="description-list-cost__value">Затраты на питание:</dt>
+                <dd class="description-list-cost__property">15 000 руб</dd>
+              </dl>
+            </div>
           </div>
 
-          <dl class="example__description-list description-list-cost">
-            <dt class="description-list-cost__value">Затраты на питание:</dt>
-            <dd class="description-list-cost__property">15 000 руб</dd>
-          </dl>
-        </div>
+          <div class="example__image-container">
+            <img class="example__image-comparison" src="img/losing-weight-cat.png" width="280" height="256" alt="Пример худеющего котика: до и после.">
+          </div>
 
-        <div class="example__image-container">
-          <img class="example__image-comparison" src="img/losing-weight-cat.png" width="280" height="256" alt="Пример худеющего котика: до и после.">
         </div>
 
       </section>
@@ -161,51 +167,55 @@
 
         <h2 class="visually-hidden">Наши контактные данные</h2>
 
-        <div class="location__wrapper">
+        <div class="location__container">
+          <div class="location__wrapper">
 
-          <em class="location__offer">Приглашаем к сотрудничеству дилеров!</em>
+            <em class="location__offer">Приглашаем к сотрудничеству дилеров!</em>
 
-          <address class="location__addresses addresses">
-            <span class="addresses__address">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="addresses__address">Санкт-Петербург</span>
-          </address>
+            <address class="location__addresses addresses">
+              <span class="addresses__address">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="addresses__address">Санкт-Петербург</span>
+            </address>
 
+          </div>
         </div>
 
         <img class="location__map" src="img/location.jpg" width="320" height="362" alt="Наша геопозиция: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
 
       </section>
 
-      <section class="main-footer__social">
+      <section class="main-footer__social-container">
 
-        <h2 class="visually-hidden">Дополнительная навигация</h2>
+        <div class="main-footer__social">
+          <h2 class="visually-hidden">Дополнительная навигация</h2>
 
-        <a class="main-footer__logo-font company-logo" title="Вернуться на Главную">
-          <img class="company-logo__font company-logo__font--footer-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
-        </a>
+          <a class="main-footer__logo-font company-logo" title="Вернуться на Главную">
+            <img class="company-logo__font company-logo__font--footer-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
+          </a>
 
-        <ul class=" main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link-social" href="#" title="Перейти в группу">1
-              <span class="visually-hidden">Мы ВКонтакте</span>
-            </a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link-social" href="#" title="Перейти на канал">2
-              <span class="visually-hidden">Наш канал на YouTube</span>
-            </a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link-social" href="#" title="Перейти на канал">3
-              <span class="visually-hidden">Наш канал в Telegramm</span>
-            </a>
-          </li>
-        </ul>
+          <ul class=" main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link-social" href="#" title="Перейти в группу">1
+                <span class="visually-hidden">Мы ВКонтакте</span>
+              </a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link-social" href="#" title="Перейти на канал">2
+                <span class="visually-hidden">Наш канал на YouTube</span>
+              </a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link-social" href="#" title="Перейти на канал">3
+                <span class="visually-hidden">Наш канал в Telegramm</span>
+              </a>
+            </li>
+          </ul>
 
-        <a class="main-footer__logo-with-icon developer-company-logo" href="#" title="Перейти на сайт HTML Academy">
-          <span class="developer-company-logo__font">HTML Academy</span>
-          <img class="developer-company-logo__icon" src="img/logo-developer-company.svg" width="27" height="34" alt="HTML Academy.">
-        </a>
+          <a class="main-footer__logo-with-icon developer-company-logo" href="#" title="Перейти на сайт HTML Academy">
+            <span class="developer-company-logo__font">HTML Academy</span>
+            <img class="developer-company-logo__icon" src="img/logo-developer-company.svg" width="27" height="34" alt="HTML Academy.">
+          </a>
+        </div>
 
       </section>
 

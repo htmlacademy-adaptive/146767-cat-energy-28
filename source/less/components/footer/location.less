@@ -1,3 +1,7 @@
+.location {
+  position: relative;
+}
+
 .location__wrapper {
   display: flex;
   justify-content: space-between;
@@ -32,5 +36,32 @@
   .location__offer {
     font-size: 20px;
     line-height: 26px;
+  }
+
+  .location__map {
+    height: 400px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .location__wrapper {
+    max-width: 565px;
+    position: absolute;
+    top: 95px;
+    box-sizing: border-box;
+    background-color: @main-background-color;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .location__container {
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+
+  .location__offer {
+    margin-right: 87px;
   }
 }

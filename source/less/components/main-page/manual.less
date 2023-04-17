@@ -87,3 +87,46 @@
     color: @font-color-grayish;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .manual {
+    max-width: 1220px;
+    padding: 0;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .manual__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-top: 72px;
+    padding-bottom: 70px;
+  }
+
+  .manual__item {
+    max-width: 250px;
+  }
+
+  .manual-number {
+    top: -38px;
+    left: 0;
+
+    &--number-one {
+      left: 90px;
+    }
+
+    &--number-two {
+      left: 80px;
+    }
+
+    &--number-three {
+      left: 80px;
+    }
+
+    &--number-four {
+      left: 70px;
+    }
+  }
+}
