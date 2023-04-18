@@ -37,3 +37,14 @@
     background-color: @background-color-grayish;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .product-catalog__list {
+    max-width: 1220px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 62px;
+    column-gap: 80px;
+    align-items: end;
+  }
+}

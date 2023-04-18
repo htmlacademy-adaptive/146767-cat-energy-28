@@ -52,3 +52,31 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .groups-form-elements__wrapper {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .groups-form-elements__wrapper {
+    &--add-info {
+      max-width: 1220px;
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      column-gap: 80px;
+      row-gap: 0;
+    }
+
+    &--contacts-owner {
+      max-width: 1220px;
+      display: grid;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+    }
+  }
+}

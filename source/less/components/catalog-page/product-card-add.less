@@ -21,4 +21,17 @@
     line-height: 20px;
     margin-bottom: 25px;
   }
+
+  .product-card-add {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    column-gap: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-card-add__header {
+    margin: 0;
+  }
 }

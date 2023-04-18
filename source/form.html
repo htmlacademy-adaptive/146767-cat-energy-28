@@ -50,59 +50,62 @@
 
       <form class="form-page__program-selection program-selection-form" name="program-selection-form" action="https://echo.htmlacademy.ru" method="get">
 
-        <section class="program-selection-form__personal-information">
-          <fieldset class="groups-form-elements">
-            <legend>
-              <h2 class="visually-hidden">Сообщите имя, вес и возраст вашего питомца</h2>
-            </legend>
-            <div class="groups-form-elements__wrapper">
-              <label class="groups-form-elements__input-field input-field">
-                <span class="input-field__input-name">Имя:*</span>
-                <input class="input-field__input-area" type="text" name="name-of-the-cat" placeholder="Барсик" required>
-              </label>
-              <label class="groups-form-elements__input-field input-field">
-                <span class="input-field__input-name">Вес (кг):*</span>
-                <input class="input-field__input-area" type="number" name="weight" placeholder="7" required>
-              </label>
-              <label class="groups-form-elements__input-field input-field">
-                <span class="input-field__input-name">Возраст (лет):*</span>
-                <input class="input-field__input-area" type="number" name="age" placeholder="7" required>
-              </label>
-            </div>
-          </fieldset>
-        </section>
+        <div class="program-selection-form__info-and-selection-container">
+          <section class="program-selection-form__personal-information">
+            <fieldset class="groups-form-elements">
+              <legend>
+                <h2 class="visually-hidden">Сообщите имя, вес и возраст вашего питомца</h2>
+              </legend>
+              <div class="groups-form-elements__wrapper">
+                <label class="groups-form-elements__input-field input-field">
+                  <span class="input-field__input-name">Имя:*</span>
+                  <input class="input-field__input-area" type="text" name="name-of-the-cat" placeholder="Барсик" required>
+                </label>
+                <label class="groups-form-elements__input-field input-field">
+                  <span class="input-field__input-name">Вес (кг):*</span>
+                  <input class="input-field__input-area" type="number" name="weight" placeholder="7" required>
+                </label>
+                <label class="groups-form-elements__input-field input-field">
+                  <span class="input-field__input-name">Возраст (лет):*</span>
+                  <input class="input-field__input-area" type="number" name="age" placeholder="7" required>
+                </label>
+              </div>
+            </fieldset>
+          </section>
 
-        <section class="program-selection-form__program-selection">
-          <fieldset class="groups-form-elements groups-form-elements--program-selection">
-            <legend>
-              <h2 class="visually-hidden">Выберите программу</h2>
-            </legend>
-            <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
-              <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain" checked>
-              <span class="input-field__input-name input-field__input-name--program-selection">Похудение</span>
-            </label>
-            <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
-              <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
-              <span class="input-field__input-name input-field__input-name--program-selection">Набор массы</span>
-            </label>
-            <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
-              <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
-              <span class="input-field__input-name input-field__input-name--program-selection">Не знаю (нужен ваш совет)</span>
-            </label>
-          </fieldset>
-        </section>
+          <section class="program-selection-form__program-selection">
+            <fieldset class="groups-form-elements groups-form-elements--program-selection">
+              <legend>
+                <h2 class="visually-hidden">Выберите программу</h2>
+              </legend>
+              <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
+                <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain" checked>
+                <span class="input-field__input-name input-field__input-name--program-selection">Похудение</span>
+              </label>
+              <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
+                <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
+                <span class="input-field__input-name input-field__input-name--program-selection">Набор массы</span>
+              </label>
+              <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
+                <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
+                <span class="input-field__input-name input-field__input-name--program-selection">Не знаю (нужен ваш совет)</span>
+              </label>
+            </fieldset>
+          </section>
+        </div>
+
 
         <section class="program-selection-form__contacts-owner">
           <fieldset class="groups-form-elements">
             <legend class="groups-form-elements__legend">
               <h2 class="form-title form-title--contacts-owner">Контактные данные (владельца кота)</h2>
             </legend>
-            <div class="groups-form-elements__wrapper">
-              <label class="groups-form-elements__input-field input-field">
+            <div class="groups-form-elements__wrapper groups-form-elements__wrapper--contacts-owner">
+              <label class="groups-form-elements__input-field input-field input-field--contacts-owner">
                 <span class="input-field__input-name">E-mail:*</span>
                 <input class="input-field__input-area" type="email" name="mail" placeholder="kuklachev@gmail.com" required>
               </label>
-              <label class="groups-form-elements__input-field input-field">
+              <label class="groups-form-elements__input-field input-field input-field--contacts-owner">
                 <span class="input-field__input-name">телефон:*</span>
                 <input class="input-field__input-area" type="tel" name="phone" placeholder="8 (960) 900-60-90" required>
               </label>
@@ -124,7 +127,7 @@
             </legend>
             <div class="groups-form-elements__wrapper groups-form-elements__wrapper--add-info">
               <label class="groups-form-elements__input-field input-field input-field--add-info">
-                <input class="input-field__input-checkbox" type="checkbox" name="sweetener">
+                <input class="input-field__input-checkbox" type="checkbox" name="sweetener" checked>
                 <span class="input-field__input-name input-field__input-name--add-info">Сахарозаменитель</span>
               </label>
               <label class="groups-form-elements__input-field input-field input-field--add-info">
