@@ -8,6 +8,7 @@
 }
 
 .button-redirect__text {
+  display: block;
   font-family: @header-font-family;
   font-style: normal;
   font-weight: 400;
@@ -15,4 +16,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @secondary-font-color;
+}
+
+@media (min-width: @tablet-width) {
+  .button-redirect__text {
+    padding: 14px 26px;
+  }
 }

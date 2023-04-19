@@ -36,3 +36,17 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+@media (min-width: @tablet-width) {
+  body {
+    font-size: @tablet-font-size;
+    line-height: @tablet-line-height;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    font-size: @desktop-font-size;
+    line-height: @desktop-line-height;
+  }
+}

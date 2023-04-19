@@ -27,10 +27,10 @@
       <nav class="main-nav">
 
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--current">
+          <li class="main-nav__item">
             <a class="main-nav__link" href="index.html" title="Перейти на страницу Главная">Главная</a>
           </li>
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--current">
             <a class="main-nav__link">Каталог продукции</a>
           </li>
           <li class="main-nav__item">
@@ -245,87 +245,93 @@
 
       </section>
 
-      <section class="catalog-page__addition-product-catalog addition-product-catalog">
+      <h2 class="catalog-page__addition-product-header">Дополнительные товары</h2>
 
-        <h2 class="addition-product-catalog__header">Дополнительные товары</h2>
+      <div class="catalog-page__add-catalog-and-banner-container">
 
-        <ul class="addition-product-catalog__list">
+        <section class="catalog-page__addition-product-catalog addition-product-catalog">
 
-          <li class="addition-product-catalog__item product-card-add">
-            <h3 class="product-card-add__header">Сахарозаменитель</h3>
+          <ul class="addition-product-catalog__list">
 
-            <dl class="product-card-add__description-list description-list-cost-add">
-              <dt class="description-list-cost-add__value">1 упаковка (100 г)<dt>
-              <dd class="description-list-cost-add__property">200 р</dd>
-            </dl>
+            <li class="addition-product-catalog__item product-card-add">
+              <h3 class="product-card-add__header">Сахарозаменитель</h3>
 
-            <button class="button-event" type="button">
-              <span class="button-event__text">
-                Заказать
-              </span>
-            </button>
-          </li>
+              <dl class="product-card-add__description-list description-list-cost-add">
+                <dt class="description-list-cost-add__value">1 упаковка (100 г)<dt>
+                <dd class="description-list-cost-add__property">200 р</dd>
+              </dl>
 
-          <li class="addition-product-catalog__item product-card-add">
-            <h3 class="product-card-add__header">Питьевая вода</h3>
+              <button class="button-event" type="button">
+                <span class="button-event__text">
+                  Заказать
+                </span>
+              </button>
+            </li>
 
-            <dl class="product-card-add__description-list description-list-cost-add">
-              <dt class="description-list-cost-add__value">5 литров<dt>
-              <dd class="description-list-cost-add__property">50 р</dd>
-            </dl>
+            <li class="addition-product-catalog__item product-card-add">
+              <h3 class="product-card-add__header">Питьевая вода</h3>
 
-            <button class="button-event" type="button">
-              <span class="button-event__text">
-                Заказать
-              </span>
-            </button>
-          </li>
+              <dl class="product-card-add__description-list description-list-cost-add">
+                <dt class="description-list-cost-add__value">5 литров<dt>
+                <dd class="description-list-cost-add__property">50 р</dd>
+              </dl>
 
-          <li class="addition-product-catalog__item product-card-add">
-            <h3 class="product-card-add__header">Молоко</h3>
+              <button class="button-event" type="button">
+                <span class="button-event__text">
+                  Заказать
+                </span>
+              </button>
+            </li>
 
-            <dl class="product-card-add__description-list description-list-cost-add">
-              <dt class="description-list-cost-add__value">1 литр<dt>
-              <dd class="description-list-cost-add__property">100 р</dd>
-            </dl>
+            <li class="addition-product-catalog__item product-card-add">
+              <h3 class="product-card-add__header">Молоко</h3>
 
-            <button class="button-event" type="button">
-              <span class="button-event__text">
-                Заказать
-              </span>
-            </button>
-          </li>
+              <dl class="product-card-add__description-list description-list-cost-add">
+                <dt class="description-list-cost-add__value">1 литр<dt>
+                <dd class="description-list-cost-add__property">100 р</dd>
+              </dl>
 
-          <li class="addition-product-catalog__item product-card-add">
-            <h3 class="product-card-add__header">Витамины</h3>
+              <button class="button-event" type="button">
+                <span class="button-event__text">
+                  Заказать
+                </span>
+              </button>
+            </li>
 
-            <dl class="product-card-add__description-list description-list-cost-add">
-              <dt class="description-list-cost-add__value">1 упаковка (30 г)<dt>
-              <dd class="description-list-cost-add__property">300 р</dd>
-            </dl>
+            <li class="addition-product-catalog__item product-card-add">
+              <h3 class="product-card-add__header">Витамины</h3>
 
-            <button class="button-event" type="button">
-              <span class="button-event__text">
-                Заказать
-              </span>
-            </button>
-          </li>
+              <dl class="product-card-add__description-list description-list-cost-add">
+                <dt class="description-list-cost-add__value">1 упаковка (30 г)<dt>
+                <dd class="description-list-cost-add__property">300 р</dd>
+              </dl>
 
-        </ul>
+              <button class="button-event" type="button">
+                <span class="button-event__text">
+                  Заказать
+                </span>
+              </button>
+            </li>
 
-      </section>
+          </ul>
 
-      <section class="banner-promotion">
+        </section>
 
-        <h2 class="visually-hidden">Акционное предложение!</h2>
+        <section class="banner-promotion">
 
-        <div class="banner-promotion__container">
-          <img class="banner-promotion__image" src="img/cat-in-a-carrier-bag.jpg" width="280" height="290" alt="Кот в сумке-переноске с окошком.">
-          <div class="banner-promotion__overlay"></div>
-          <p class="banner-promotion__text">Закажите все<br> и получите чехол для кота в подарок!</p>
-        </div>
+          <h2 class="visually-hidden">Акционное предложение!</h2>
 
-      </section>
+          <div class="banner-promotion__container">
+            <img class="banner-promotion__image" src="img/cat-in-a-carrier-bag.jpg" width="280" height="290" alt="Кот в сумке-переноске с окошком.">
+            <div class="banner-promotion__overlay"></div>
+            <img class="banner-promotion__icon" src="img/gift-icon.svg" width="78" height="80" alt="Подарочная коробка.">
+            <p class="banner-promotion__text">Закажите все<br> и получите чехол для кота в подарок!</p>
+          </div>
+
+        </section>
+
+      </div>
+
 
     </main>
 
@@ -335,51 +341,55 @@
 
         <h2 class="visually-hidden">Наши контактные данные</h2>
 
-        <div class="location__wrapper location__wrapper--bacgroun-color-darker">
+        <div class="location__container">
+          <div class="location__wrapper">
 
-          <em class="location__offer">Приглашаем к сотрудничеству дилеров!</em>
+            <em class="location__offer">Приглашаем к сотрудничеству дилеров!</em>
 
-          <address class="location__addresses addresses">
-            <span class="addresses__address">ул. Большая Конюшенная, д. 19/8</span>
-            <span class="addresses__address">Санкт-Петербург</span>
-          </address>
+            <address class="location__addresses addresses">
+              <span class="addresses__address">ул. Большая Конюшенная, д. 19/8</span>
+              <span class="addresses__address">Санкт-Петербург</span>
+            </address>
 
+          </div>
         </div>
 
         <img class="location__map" src="img/location.jpg" width="320" height="362" alt="Наша геопозиция: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
 
       </section>
 
-      <section class="main-footer__social">
+      <section class="main-footer__social-container">
 
-        <h2 class="visually-hidden">Дополнительная навигация</h2>
+        <div class="main-footer__social">
+          <h2 class="visually-hidden">Дополнительная навигация</h2>
 
-        <a class="main-footer__logo-font company-logo" title="Вернуться на Главную">
-          <img class="company-logo__font company-logo__font--footer-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
-        </a>
+          <a class="main-footer__logo-font company-logo" title="Вернуться на Главную">
+            <img class="company-logo__font company-logo__font--footer-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
+          </a>
 
-        <ul class=" main-footer__list">
-          <li class="main-footer__item">
-            <a class="main-footer__link-social" href="#" title="Перейти в группу">1
-              <span class="visually-hidden">Мы ВКонтакте</span>
-            </a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link-social" href="#" title="Перейти на канал">2
-              <span class="visually-hidden">Наш канал на YouTube</span>
-            </a>
-          </li>
-          <li class="main-footer__item">
-            <a class="main-footer__link-social" href="#" title="Перейти на канал">3
-              <span class="visually-hidden">Наш канал в Telegramm</span>
-            </a>
-          </li>
-        </ul>
+          <ul class=" main-footer__list">
+            <li class="main-footer__item">
+              <a class="main-footer__link-social" href="#" title="Перейти в группу">1
+                <span class="visually-hidden">Мы ВКонтакте</span>
+              </a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link-social" href="#" title="Перейти на канал">2
+                <span class="visually-hidden">Наш канал на YouTube</span>
+              </a>
+            </li>
+            <li class="main-footer__item">
+              <a class="main-footer__link-social" href="#" title="Перейти на канал">3
+                <span class="visually-hidden">Наш канал в Telegramm</span>
+              </a>
+            </li>
+          </ul>
 
-        <a class="main-footer__logo-with-icon developer-company-logo" href="#" title="Перейти на сайт HTML Academy">
-          <span class="developer-company-logo__font">HTML Academy</span>
-          <img class="developer-company-logo__icon" src="img/logo-developer-company.svg" width="27" height="34" alt="HTML Academy.">
-        </a>
+          <a class="main-footer__logo-with-icon developer-company-logo" href="#" title="Перейти на сайт HTML Academy">
+            <span class="developer-company-logo__font">HTML Academy</span>
+            <img class="developer-company-logo__icon" src="img/logo-developer-company.svg" width="27" height="34" alt="HTML Academy.">
+          </a>
+        </div>
 
       </section>
 

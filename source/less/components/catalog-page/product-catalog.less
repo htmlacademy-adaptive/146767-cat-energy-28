@@ -16,3 +16,35 @@
   padding-bottom: 20px;
   border-top: 1px solid #d9d9d9;
 }
+
+@media (min-width: @tablet-width) {
+  .product-catalog__list {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 60px;
+    column-gap: 60px;
+    align-items: end;
+  }
+
+  .product-catalog__item {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 0;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 40px;
+    border: none;
+    background-color: @background-color-grayish;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-catalog__list {
+    max-width: 1220px;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 62px;
+    column-gap: 80px;
+    align-items: end;
+  }
+}

@@ -1,3 +1,9 @@
+.product-card-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .product-card-add__header {
   margin: 0;
   font-family: @header-font-family;
@@ -7,4 +13,25 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @main-lighten-font-color;
+}
+
+@media (min-width: @tablet-width) {
+  .product-card-add__header {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+
+  .product-card-add {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    column-gap: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product-card-add__header {
+    margin: 0;
+  }
 }

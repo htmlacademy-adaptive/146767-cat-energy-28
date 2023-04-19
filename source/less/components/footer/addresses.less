@@ -6,3 +6,20 @@
   line-height: 20px;
   color: @main-light-font-color;
 }
+
+@media (min-width: @tablet-width) {
+  .addresses {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .addresses__address {
+    display: block;
+
+    &:first-child {
+      margin-bottom: 20px;
+    }
+  }
+}

@@ -20,3 +20,30 @@
   display: inline;
   margin-left: 0;
 }
+
+@media (min-width: @tablet-width) {
+  .description-list-cost__property {
+    display: block;
+    text-align: right;
+  }
+
+  .description-list-cost {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .description-list-cost {
+    text-align: left;
+  }
+
+  .description-list-cost__value {
+    margin-right: 63px;
+  }
+
+  .description-list-cost__property {
+    display: inline-block;
+  }
+}

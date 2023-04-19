@@ -1,6 +1,6 @@
 .form-title {
   position: relative;
-  padding-left: 20px;
+  margin-left: 20px;
   margin-top: 24px;
   margin-bottom: 35px;
   font-family: @header-font-family;
@@ -9,4 +9,49 @@
   font-size: 24px;
   line-height: 26px;
   color: @main-font-color;
+
+  &--contacts-owner {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form-title {
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0;
+    margin-left: 70px;
+
+    &--contacts-owner {
+      max-width: none;
+      margin-bottom: 76px;
+    }
+
+    &--comments {
+      margin-bottom: 76px;
+    }
+
+    &--add-info {
+      margin-bottom: 57px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-title {
+    max-width: 1220px;
+    margin: 0 auto;
+
+    &--contacts-owner {
+      margin-bottom: 76px;
+    }
+
+    &--comments {
+      margin-bottom: 76px;
+    }
+
+    &--add-info {
+      margin-bottom: 57px;
+    }
+  }
 }
