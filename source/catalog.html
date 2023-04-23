@@ -11,34 +11,46 @@
 
     <header class="main-header">
 
-      <div class="main-header__wrapper">
+      <div class="main-header__container">
 
-        <a class="main-header__logo-with-icon company-logo" title="Вы на Главной странице">
-          <img class="company-logo__icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Cat Energy иконка логотипа.">
-          <img class="company-logo__font company-logo__font--header-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
-        </a>
+        <div class="main-header__wrapper">
 
-        <button class="main-header__toggle">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+          <a class="main-header__logo-with-icon company-logo" title="Вы на Главной странице">
+            <img class="company-logo__icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Cat Energy иконка логотипа.">
+            <img class="company-logo__icon company-logo__icon--tablet" src="img/logo-icon-tablet.svg" width="60" height="50" alt="Cat Energy иконка логотипа.">
+            <img class="company-logo__icon company-logo__icon--desktop" src="img/logo-icon-desktop.svg" width="70" height="60" alt="Cat Energy иконка логотипа.">
+            <img class="company-logo__font company-logo__font--header-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
+          </a>
+
+          <button class="main-header__toggle toggle-menu">
+            <span class="visually-hidden">Открыть меню</span>
+            <svg class="toggle-menu__icon" width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line class="toggle-menu__line-top" y1="1.25" x2="24" y2="1.25" stroke="black" stroke-width="1.5"/>
+              <line class="toggle-menu__line-centre-first" y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+              <line class="toggle-menu__line-centre-second" y1="9.25" x2="24" y2="9.25" stroke="black" stroke-width="1.5"/>
+              <line class="toggle-menu__line-bottom" y1="17.25" x2="24" y2="17.25" stroke="black" stroke-width="1.5"/>
+            </svg>
+          </button>
+
+        </div>
+
+        <nav class="main-nav">
+
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html" title="Перейти на страницу Главная">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link main-nav__link--current">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html" title="Перейти на страницу Подбора программы">Подбор программы</a>
+            </li>
+          </ul>
+
+        </nav>
 
       </div>
-
-      <nav class="main-nav">
-
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="index.html" title="Перейти на страницу Главная">Главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--current">
-            <a class="main-nav__link">Каталог продукции</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html" title="Перейти на страницу Подбора программы">Подбор программы</a>
-          </li>
-        </ul>
-
-      </nav>
 
     </header>
 
@@ -369,17 +381,20 @@
 
           <ul class=" main-footer__list">
             <li class="main-footer__item">
-              <a class="main-footer__link-social" href="#" title="Перейти в группу">1
+              <a class="main-footer__link-social" href="#" title="Перейти в группу">
+                <img class="main-footer__icon-social" src="img/vkontakte-icon.svg" alt="vkontakte.">
                 <span class="visually-hidden">Мы ВКонтакте</span>
               </a>
             </li>
             <li class="main-footer__item">
-              <a class="main-footer__link-social" href="#" title="Перейти на канал">2
+              <a class="main-footer__link-social" href="#" title="Перейти на канал">
+                <img class="main-footer__icon-social" src="img/youtube-icon.svg" alt="youtube.">
                 <span class="visually-hidden">Наш канал на YouTube</span>
               </a>
             </li>
             <li class="main-footer__item">
-              <a class="main-footer__link-social" href="#" title="Перейти на канал">3
+              <a class="main-footer__link-social" href="#" title="Перейти на канал">
+                <img class="main-footer__icon-social" src="img/telegram-icon.svg" alt="telegram.">
                 <span class="visually-hidden">Наш канал в Telegramm</span>
               </a>
             </li>
@@ -394,6 +409,8 @@
       </section>
 
     </footer>
+
+    <script src="js/javascript.js"></script>
 
   </body>
 </html>
