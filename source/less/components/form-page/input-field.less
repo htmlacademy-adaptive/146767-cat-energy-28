@@ -15,18 +15,50 @@
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+
+  &--add-info {
+    padding: 6px 0;
+    margin-bottom: 13px;
+  }
+}
+
+.input-field__control-input[type="radio"]:checked + .input-field__input-radio::before {
+  position: absolute;
+  top: 9px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 13px;
+  height: 13px;
+  margin: 0 auto;
+  background-color: @accent-background-color;
+  border-radius: 50%;
+  content: "";
 }
 
 .input-field__input-radio {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
   padding: 0;
   margin: 0;
-  margin-right: 15px;
 }
 
 .input-field__input-checkbox {
+  position: absolute;
+  border: 1px solid #cdcdcd;
+  width: 30px;
+  height: 30px;
   padding: 0;
   margin: 0;
-  margin-right: 15px;
+}
+
+.input-field__control-input[type="checkbox"]:checked + .input-field__input-checkbox {
+  background-image: url("../img/cheked-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .input-field__input-area {
@@ -45,12 +77,14 @@
   margin-right: 13px;
 
   &--add-info {
+    padding-left: 45px;
     margin: 0;
     flex-grow: 1;
     color: @main-font-color;
   }
 
   &--program-selection {
+    padding-left: 45px;
     margin: 0;
     flex-grow: 1;
     color: @main-lighten-font-color;
@@ -71,6 +105,17 @@
     }
   }
 
+  .input-field__control-input[type="radio"]:checked + .input-field__input-radio::before {
+    top: 11px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .input-field__input-radio {
+    width: 40px;
+    height: 40px;
+  }
+
   .input-field__input-area {
     padding-top: 11px;
     padding-bottom: 11px;
@@ -81,7 +126,12 @@
     margin-right: 13px;
 
     &--add-info {
+      padding-left: 60px;
       margin: 0;
+    }
+
+    &--program-selection {
+      padding-left: 60px;
     }
   }
 }

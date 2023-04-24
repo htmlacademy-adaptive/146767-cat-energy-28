@@ -9,7 +9,7 @@
 
   <body class="page__body">
 
-    <header class="main-header">
+    <header class="main-header main-header--nojs">
 
       <div class="main-header__container">
 
@@ -34,7 +34,7 @@
 
         </div>
 
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--nojs">
 
           <ul class="main-nav__list">
             <li class="main-nav__item">
@@ -91,15 +91,18 @@
                 <h2 class="visually-hidden">Выберите программу</h2>
               </legend>
               <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
-                <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain" checked>
+                <input class="visually-hidden input-field__control-input" type="radio" name="diet-or-weight-gain" checked>
+                <span class="input-field__input-radio"></span>
                 <span class="input-field__input-name input-field__input-name--program-selection">Похудение</span>
               </label>
               <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
-                <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
+                <input class="visually-hidden input-field__control-input" type="radio" name="diet-or-weight-gain">
+                <span class="input-field__input-radio"></span>
                 <span class="input-field__input-name input-field__input-name--program-selection">Набор массы</span>
               </label>
               <label class="groups-form-elements__input-field groups-form-elements__input-field--program-selection input-field">
-                <input class="input-field__input-radio" type="radio" name="diet-or-weight-gain">
+                <input class="visually-hidden input-field__control-input" type="radio" name="diet-or-weight-gain">
+                <span class="input-field__input-radio"></span>
                 <span class="input-field__input-name input-field__input-name--program-selection">Не знаю (нужен ваш совет)</span>
               </label>
             </fieldset>
@@ -139,19 +142,23 @@
             </legend>
             <div class="groups-form-elements__wrapper groups-form-elements__wrapper--add-info">
               <label class="groups-form-elements__input-field input-field input-field--add-info">
-                <input class="input-field__input-checkbox" type="checkbox" name="sweetener" checked>
+                <input class="visually-hidden input-field__control-input" type="checkbox" name="sweetener" checked>
+                <span class="input-field__input-checkbox"></span>
                 <span class="input-field__input-name input-field__input-name--add-info">Сахарозаменитель</span>
               </label>
               <label class="groups-form-elements__input-field input-field input-field--add-info">
-                <input class="input-field__input-checkbox" type="checkbox" name="drinking-water">
+                <input class="visually-hidden input-field__control-input" type="checkbox" name="drinking-water">
+                <span class="input-field__input-checkbox"></span>
                 <span class="input-field__input-name input-field__input-name--add-info">Питьевая вода</span>
               </label>
               <label class="groups-form-elements__input-field input-field input-field--add-info">
-                <input class="input-field__input-checkbox" type="checkbox" name="milk">
+                <input class="visually-hidden input-field__control-input" type="checkbox" name="milk">
+                <span class="input-field__input-checkbox"></span>
                 <span class="input-field__input-name input-field__input-name--add-info">Молоко</span>
               </label>
               <label class="groups-form-elements__input-field input-field input-field--add-info">
-                <input class="input-field__input-checkbox" type="checkbox" name="vitamins">
+                <input class="visually-hidden input-field__control-input" type="checkbox" name="vitamins">
+                <span class="input-field__input-checkbox"></span>
                 <span class="input-field__input-name input-field__input-name--add-info">Витамины</span>
               </label>
             </div>
@@ -179,7 +186,7 @@
         <h2 class="visually-hidden">Наши контактные данные</h2>
 
         <div class="location__container">
-          <div class="location__wrapper">
+          <div class="location__wrapper location__wrapper--main-page">
 
             <em class="location__offer">Приглашаем к сотрудничеству дилеров!</em>
 
@@ -191,7 +198,9 @@
           </div>
         </div>
 
-        <img class="location__map" src="img/location.jpg" width="320" height="362" alt="Наша геопозиция: г.Санкт-Петербург, ул. Большая Конюшенная, д. 19/8.">
+        <img class="location__my-position-icon" src="img/map-pin-icon.png" alt="Наше местоположение.">
+
+        <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5544372001136!2d30.317594947187814!3d59.938359009428524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682354352997!5m2!1sru!2sru" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       </section>
 

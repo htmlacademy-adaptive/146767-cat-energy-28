@@ -20,6 +20,11 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &--program-selection {
+    padding: 6px 0;
+    margin-bottom: 13px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -47,8 +52,8 @@
     margin-bottom: 20px;
 
     &--program-selection {
-      padding-left: 0;
-      padding-right: 0;
+      padding: 6px 0;
+      margin-bottom: 13px;
     }
   }
 }
@@ -77,6 +82,13 @@
       margin: 0 auto;
       grid-template-columns: 1fr 1fr;
       column-gap: 80px;
+    }
+  }
+
+  .groups-form-elements__input-field {
+    &--program-selection {
+      padding: 0;
+      margin-bottom: 20px;
     }
   }
 }
