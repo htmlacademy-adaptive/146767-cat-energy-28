@@ -7,6 +7,16 @@
   cursor: pointer;
 }
 
+.company-logo__icon {
+  &--tablet {
+    display: none;
+  }
+
+  &--desktop {
+    display: none;
+  }
+}
+
 .company-logo__font {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -23,6 +33,18 @@
 }
 
 @media (min-width: @tablet-width) {
+  .company-logo__icon {
+    display: none;
+
+    &--tablet {
+      display: block;
+    }
+
+    &--desktop {
+      display: none;
+    }
+  }
+
   .company-logo__font {
     &--header-position {
       transform: none;
@@ -32,6 +54,20 @@
     &--footer-position {
       padding-top: 0;
       padding-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .company-logo__icon {
+    display: none;
+
+    &--tablet {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
     }
   }
 }

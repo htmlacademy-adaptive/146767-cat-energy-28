@@ -1,0 +1,48 @@
+.toggle-menu {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 16px;
+}
+
+.toggle-menu__line-top {
+  opacity: 1;
+  transition: opacity 0.4s;
+
+  &--show {
+    opacity: 0;
+  }
+}
+
+.toggle-menu__line-bottom {
+  opacity: 1;
+  transition: opacity 0.4s;
+
+  &--show {
+    opacity: 0;
+  }
+}
+
+.toggle-menu__line-centre-first {
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: transform 0.4s;
+
+  &--show {
+    transform: rotate(45deg);
+    transform-origin: center;
+  }
+}
+
+.toggle-menu__line-centre-second {
+  transform: rotate(0deg);
+  transform-origin: center;
+  transition: transform 0.4s;
+
+  &--show {
+    transform: rotate(-45deg);
+    transform-origin: center;
+  }
+}
