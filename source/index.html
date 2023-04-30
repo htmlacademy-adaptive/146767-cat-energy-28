@@ -3,7 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Кэт энерджи</title>
+
+    <title>Cat Energy | Функциональное питание для котов</title>
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+
+    <!-- styles -->
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -16,9 +25,11 @@
         <div class="main-header__wrapper">
 
           <a class="main-header__logo-with-icon company-logo" title="Вы на Главной странице">
-            <img class="company-logo__icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Cat Energy иконка логотипа.">
-            <img class="company-logo__icon company-logo__icon--tablet" src="img/logo-icon-tablet.svg" width="60" height="50" alt="Cat Energy иконка логотипа.">
-            <img class="company-logo__icon company-logo__icon--desktop" src="img/logo-icon-desktop.svg" width="70" height="60" alt="Cat Energy иконка логотипа.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-icon-desktop.svg">
+              <source media="(min-width: 769px)" srcset="img/logo-icon-tablet.svg">
+              <img class="company-logo__icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Cat Energy иконка логотипа.">
+            </picture>
             <img class="company-logo__font company-logo__font--header-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
           </a>
 
@@ -72,7 +83,13 @@
           </span>
         </a>
 
-        <img class="promo__product-image" src="img/promo-food.png" width="280" height="270" alt="Кошачья еда Cat Energy со вкусом курицы.">
+        <div class="promo__overlay-image">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/desktop-promo-food.png, img/desktop-promo-food@2x.png 2x">
+            <source media="(min-width: 769px)" srcset="img/tablet-promo-food.jpg, img/tablet-promo-food@2x.jpg 2x">
+            <img class="promo__product-image" src="img/promo-food.png" srcset="img/promo-food@2x.png 2x" width="280" height="270" alt="Кошачья еда Cat Energy со вкусом курицы.">
+          </picture>
+        </div>
 
       </section>
 
@@ -164,7 +181,11 @@
           </div>
 
           <div class="example__image-container">
-            <img class="example__image-comparison" src="img/losing-weight-cat.png" width="280" height="256" alt="Пример худеющего котика: до и после.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/tablet-losing-weight-cat.png, img/tablet-losing-weight-cat@2x.png 2x">
+              <source media="(min-width: 769px)" srcset="img/tablet-losing-weight-cat.png, img/tablet-losing-weight-cat@2x.png 2x">
+              <img class="example__image-comparison" src="img/losing-weight-cat.png" srcset="img/losing-weight-cat@2x.png 2x" width="280" height="256" alt="Пример худеющего котика: до и после.">
+            </picture>
           </div>
 
         </div>
@@ -192,7 +213,7 @@
           </div>
         </div>
 
-        <img class="location__my-position-icon" src="img/map-pin-icon.png" alt="Наше местоположение.">
+        <img class="location__my-position-icon" src="img/map-pin-icon.png" srcset="img/map-pin-icon@2x.png 2x" alt="Наше местоположение.">
 
         <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5544372001136!2d30.317594947187814!3d59.938359009428524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682354352997!5m2!1sru!2sru" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
