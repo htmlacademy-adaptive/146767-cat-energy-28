@@ -8,13 +8,8 @@
 }
 
 .company-logo__icon {
-  &--tablet {
-    display: none;
-  }
-
-  &--desktop {
-    display: none;
-  }
+  width: 33px;
+  height: 38px;
 }
 
 .company-logo__font {
@@ -34,15 +29,8 @@
 
 @media (min-width: @tablet-width) {
   .company-logo__icon {
-    display: none;
-
-    &--tablet {
-      display: block;
-    }
-
-    &--desktop {
-      display: none;
-    }
+    width: 60px;
+    height: 50px;
   }
 
   .company-logo__font {
@@ -60,14 +48,7 @@
 
 @media (min-width: @desktop-width) {
   .company-logo__icon {
-    display: none;
-
-    &--tablet {
-      display: none;
-    }
-
-    &--desktop {
-      display: block;
-    }
+    width: 70px;
+    height: 60px;
   }
 }

@@ -3,7 +3,16 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>HTML Academy: Кэт энерджи</title>
+
+    <title>Cat Energy | Каталог продукции</title>
+
+    <!-- favicons -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+
+    <!-- styles -->
     <link rel="stylesheet" href="css/style.css">
   </head>
 
@@ -16,9 +25,11 @@
         <div class="main-header__wrapper">
 
           <a class="main-header__logo-with-icon company-logo" title="Вы на Главной странице">
-            <img class="company-logo__icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Cat Energy иконка логотипа.">
-            <img class="company-logo__icon company-logo__icon--tablet" src="img/logo-icon-tablet.svg" width="60" height="50" alt="Cat Energy иконка логотипа.">
-            <img class="company-logo__icon company-logo__icon--desktop" src="img/logo-icon-desktop.svg" width="70" height="60" alt="Cat Energy иконка логотипа.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/logo-icon-desktop.svg">
+              <source media="(min-width: 769px)" srcset="img/logo-icon-tablet.svg">
+              <img class="company-logo__icon" src="img/logo-icon-mobile.svg" width="33" height="38" alt="Cat Energy иконка логотипа.">
+            </picture>
             <img class="company-logo__font company-logo__font--header-position" src="img/logo-font.svg" width="100" height="18" alt="Cat Energy.">
           </a>
 
@@ -67,7 +78,11 @@
           <li class="product-catalog__item product-card">
 
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/cat-energy-chicken-medium-size.png" width="68" height="86" alt="Питание Cat Energy со вкусом курицы, средний размер.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-chicken-medium-size.png, img/cat-energy-chicken-medium-size@2x.png 2x">
+                <source media="(min-width: 769px)" srcset="img/cat-energy-chicken-medium-size.png, img/cat-energy-chicken-medium-size@2x.png 2x">
+                <img class="product-card__image" src="img/mobile-cat-energy-chicken-medium-size.png" srcset="img/mobile-cat-energy-chicken-medium-size@2x.png 2x" width="68" height="86" alt="Питание Cat Energy со вкусом курицы, средний размер.">
+              </picture>
             </div>
 
             <div class="product-card__text-wrapper">
@@ -82,7 +97,7 @@
               </dl>
             </div>
 
-            <button class="button-event" type="button">
+            <button class="button-event button-event--product-card" type="button">
               <span class="button-event__text">
                 Заказать
               </span>
@@ -92,7 +107,11 @@
           <li class="product-catalog__item product-card">
 
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/cat-energy-chicken-large-size.png" width="84" height="100" alt="Питание Cat Energy со вкусом курицы, большой размер.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-chicken-large-size.png, img/cat-energy-chicken-large-size@2x.png 2x">
+                <source media="(min-width: 769px)" srcset="img/cat-energy-chicken-large-size.png, img/cat-energy-chicken-large-size@2x.png 2x">
+                <img class="product-card__image" src="img/mobile-cat-energy-chicken-large-size.png" srcset="img/mobile-cat-energy-chicken-large-size@2x.png 2x" width="84" height="100" alt="Питание Cat Energy со вкусом курицы, большой размер.">
+              </picture>
             </div>
 
             <div class="product-card__text-wrapper">
@@ -107,7 +126,7 @@
               </dl>
             </div>
 
-            <button class="button-event" type="button">
+            <button class="button-event button-event--product-card" type="button">
               <span class="button-event__text">
                 Заказать
               </span>
@@ -117,7 +136,11 @@
           <li class="product-catalog__item product-card">
 
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/cat-energy-fish-medium-size.png" width="68" height="76" alt="Питание Cat Energy со вкусом рыбы, средний размер.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-fish-medium-size.png, img/cat-energy-fish-medium-size@2x.png 2x">
+                <source media="(min-width: 769px)" srcset="img/cat-energy-fish-medium-size.png, img/cat-energy-fish-medium-size@2x.png 2x">
+                <img class="product-card__image" src="img/mobile-cat-energy-fish-medium-size.png" srcset="img/mobile-cat-energy-fish-medium-size@2x.png 2x" width="68" height="76" alt="Питание Cat Energy со вкусом рыбы, средний размер.">
+              </picture>
             </div>
 
             <div class="product-card__text-wrapper">
@@ -132,7 +155,7 @@
               </dl>
             </div>
 
-            <button class="button-event" type="button">
+            <button class="button-event button-event--product-card" type="button">
               <span class="button-event__text">
                 Заказать
               </span>
@@ -142,7 +165,11 @@
           <li class="product-catalog__item product-card">
 
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/cat-energy-fish-large-size.png" width="84" height="100" alt="Питание Cat Energy со вкусом рыбы, большой размер.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-fish-large-size.png, img/cat-energy-fish-large-size@2x.png 2x">
+                <source media="(min-width: 769px)" srcset="img/cat-energy-fish-large-size.png, img/cat-energy-fish-large-size@2x.png 2x">
+                <img class="product-card__image" src="img/mobile-cat-energy-fish-large-size.png" srcset="img/mobile-cat-energy-fish-large-size@2x.png 2x" width="84" height="100" alt="Питание Cat Energy со вкусом рыбы, большой размер.">
+              </picture>
             </div>
 
             <div class="product-card__text-wrapper">
@@ -157,7 +184,7 @@
               </dl>
             </div>
 
-            <button class="button-event" type="button">
+            <button class="button-event button-event--product-card" type="button">
               <span class="button-event__text">
                 Заказать
               </span>
@@ -167,11 +194,15 @@
           <li class="product-catalog__item product-card">
 
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/cat-energy-buckwheat-medium-size.png" width="68" height="76" alt="Питание Cat Energy со вкусом гречки, средний размер.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-buckwheat-medium-size.png, img/cat-energy-buckwheat-medium-size@2x.png 2x">
+                <source media="(min-width: 769px)" srcset="img/cat-energy-buckwheat-medium-size.png, img/cat-energy-buckwheat-medium-size@2x.png 2x">
+                <img class="product-card__image" src="img/mobile-cat-energy-buckwheat-medium-size.png" srcset="img/mobile-cat-energy-buckwheat-medium-size@2x.png 2x" width="68" height="76" alt="Питание Cat Energy со вкусом гречки, средний размер.">
+              </picture>
             </div>
 
             <div class="product-card__text-wrapper">
-              <h3 class="product-card__header">Cat Energy Pro 500 г</h3>
+              <h3 class="product-card__header">Cat Energy Slim 500 г</h3>
               <dl class="product-card__description-list description-list-catalog">
                 <dt class="description-list-catalog__value">Масса<dt>
                 <dd class="description-list-catalog__property">500 г</dd>
@@ -182,7 +213,7 @@
               </dl>
             </div>
 
-            <button class="button-event" type="button">
+            <button class="button-event button-event--product-card" type="button">
               <span class="button-event__text">
                 Заказать
               </span>
@@ -192,11 +223,15 @@
           <li class="product-catalog__item product-card">
 
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/cat-energy-buckwheat-large-size.png" width="84" height="100" alt="Питание Cat Energy со вкусом гречки, большой размер.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-buckwheat-large-size.png, img/cat-energy-buckwheat-large-size@2x.png 2x">
+                <source media="(min-width: 769px)" srcset="img/cat-energy-buckwheat-large-size.png, img/cat-energy-buckwheat-large-size@2x.png 2x">
+                <img class="product-card__image" src="img/mobile-cat-energy-buckwheat-large-size.png" srcset="img/mobile-cat-energy-buckwheat-large-size@2x.png 2x" width="84" height="100" alt="Питание Cat Energy со вкусом гречки, большой размер.">
+              </picture>
             </div>
 
             <div class="product-card__text-wrapper">
-              <h3 class="product-card__header">Cat Energy Pro 1000 г</h3>
+              <h3 class="product-card__header">Cat Energy Slim 1000 г</h3>
               <dl class="product-card__description-list description-list-catalog">
                 <dt class="description-list-catalog__value">Масса<dt>
                 <dd class="description-list-catalog__property">1000 г</dd>
@@ -207,7 +242,7 @@
               </dl>
             </div>
 
-            <button class="button-event" type="button">
+            <button class="button-event button-event--product-card" type="button">
               <span class="button-event__text">
                 Заказать
               </span>
@@ -217,11 +252,15 @@
           <li class="product-catalog__item product-card">
 
             <div class="product-card__image-wrapper">
-              <img class="product-card__image" src="img/cat-energy-rice-medium-size.png" width="72" height="84" alt="Питание Cat Energy со вкусом риса, средний размер.">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-energy-rice-medium-size.png, img/cat-energy-rice-medium-size@2x.png 2x">
+                <source media="(min-width: 769px)" srcset="img/cat-energy-rice-medium-size.png, img/cat-energy-rice-medium-size@2x.png 2x">
+                <img class="product-card__image" src="img/mobile-cat-energy-rice-medium-size.png" srcset="img/mobile-cat-energy-rice-medium-size@2x.png 2x" width="72" height="84" alt="Питание Cat Energy со вкусом риса, средний размер.">
+              </picture>
             </div>
 
             <div class="product-card__text-wrapper">
-              <h3 class="product-card__header">Cat Energy Pro 500 г</h3>
+              <h3 class="product-card__header">Cat Energy Slim 500 г</h3>
               <dl class="product-card__description-list description-list-catalog">
                 <dt class="description-list-catalog__value">Масса<dt>
                 <dd class="description-list-catalog__property">500 г</dd>
@@ -232,7 +271,7 @@
               </dl>
             </div>
 
-            <button class="button-event" type="button">
+            <button class="button-event button-event--product-card" type="button">
               <span class="button-event__text">
                 Заказать
               </span>
@@ -334,7 +373,11 @@
           <h2 class="visually-hidden">Акционное предложение!</h2>
 
           <div class="banner-promotion__container">
-            <img class="banner-promotion__image" src="img/cat-in-a-carrier-bag.jpg" width="280" height="290" alt="Кот в сумке-переноске с окошком.">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/desktop-cat-in-a-carrier-bag.jpg, img/desktop-cat-in-a-carrier-bag@2x.jpg 2x">
+              <source media="(min-width: 769px)" srcset="img/tablet-cat-in-a-carrier-bag.jpg, img/tablet-cat-in-a-carrier-bag@2x.jpg 2x">
+              <img class="banner-promotion__image" src="img/mobile-cat-in-a-carrier-bag.jpg" srcset="img/mobile-cat-in-a-carrier-bag@2x.jpg 2x" width="280" height="290" alt="Кот в сумке-переноске с окошком.">
+            </picture>
             <div class="banner-promotion__overlay"></div>
             <img class="banner-promotion__icon" src="img/gift-icon.svg" width="78" height="80" alt="Подарочная коробка.">
             <p class="banner-promotion__text">Закажите все<br> и получите чехол для кота в подарок!</p>
@@ -354,7 +397,7 @@
         <h2 class="visually-hidden">Наши контактные данные</h2>
 
         <div class="location__container">
-          <div class="location__wrapper location__wrapper--main-page">
+          <div class="location__wrapper">
 
             <em class="location__offer">Приглашаем к сотрудничеству дилеров!</em>
 
@@ -366,7 +409,7 @@
           </div>
         </div>
 
-        <img class="location__my-position-icon" src="img/map-pin-icon.png" alt="Наше местоположение.">
+        <img class="location__my-position-icon" src="img/map-pin-icon.png" srcset="img/map-pin-icon@2x.png 2x" alt="Наше местоположение.">
 
         <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2994.5544372001136!2d30.317594947187814!3d59.938359009428524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1682354352997!5m2!1sru!2sru" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
