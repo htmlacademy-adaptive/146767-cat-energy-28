@@ -374,6 +374,9 @@
 
           <div class="banner-promotion__container">
             <picture>
+              <source media="(min-width: 1440px)" type="image/webp" srcset="img/desktop-cat-in-a-carrier-bag.webp, img/desktop-cat-in-a-carrier-bag@2x.webp 2x">
+              <source media="(min-width: 769px)" type="image/webp" srcset="img/tablet-cat-in-a-carrier-bag.webp, img/tablet-cat-in-a-carrier-bag@2x.webp 2x">
+              <source type="image/webp" srcset="img/mobile-cat-in-a-carrier-bag.webp, img/mobile-cat-in-a-carrier-bag@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/desktop-cat-in-a-carrier-bag.jpg, img/desktop-cat-in-a-carrier-bag@2x.jpg 2x">
               <source media="(min-width: 769px)" srcset="img/tablet-cat-in-a-carrier-bag.jpg, img/tablet-cat-in-a-carrier-bag@2x.jpg 2x">
               <img class="banner-promotion__image" src="img/mobile-cat-in-a-carrier-bag.jpg" srcset="img/mobile-cat-in-a-carrier-bag@2x.jpg 2x" width="280" height="290" alt="Кот в сумке-переноске с окошком.">
@@ -427,19 +430,25 @@
           <ul class=" main-footer__list">
             <li class="main-footer__item">
               <a class="main-footer__link-social" href="#" title="Перейти в группу">
-                <img class="main-footer__icon-social" src="img/vkontakte-icon.svg" alt="vkontakte.">
+                <svg class="main-footer__icon-social" viewBox="0 0 28 22" width="28" height="22" >
+                  <use href="img/sprites/social-icons.svg#vk-icon"></use>
+                </svg>
                 <span class="visually-hidden">Мы ВКонтакте</span>
               </a>
             </li>
             <li class="main-footer__item">
               <a class="main-footer__link-social" href="#" title="Перейти на канал">
-                <img class="main-footer__icon-social" src="img/youtube-icon.svg" alt="youtube.">
+                <svg class="main-footer__icon-social" viewBox="0 0 28 22" width="28" height="22" >
+                  <use href="img/sprites/social-icons.svg#youtube-icon"></use>
+                </svg>
                 <span class="visually-hidden">Наш канал на YouTube</span>
               </a>
             </li>
             <li class="main-footer__item">
               <a class="main-footer__link-social" href="#" title="Перейти на канал">
-                <img class="main-footer__icon-social" src="img/telegram-icon.svg" alt="telegram.">
+                <svg class="main-footer__icon-social" viewBox="0 0 28 22" width="28" height="22" >
+                  <use href="img/sprites/social-icons.svg#telegram-icon"></use>
+                </svg>
                 <span class="visually-hidden">Наш канал в Telegramm</span>
               </a>
             </li>
@@ -447,7 +456,9 @@
 
           <a class="main-footer__logo-with-icon developer-company-logo" href="#" title="Перейти на сайт HTML Academy">
             <span class="developer-company-logo__font">HTML Academy</span>
-            <img class="developer-company-logo__icon" src="img/logo-developer-company.svg" width="27" height="34" alt="HTML Academy.">
+            <svg class="developer-company-logo__icon" viewBox="0 0 27 34" width="27" height="34">
+              <use href="img/logo-developer-company.svg#developer-company-logo__icon"></use>
+            </svg>
           </a>
         </div>
 
