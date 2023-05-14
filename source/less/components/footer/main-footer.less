@@ -15,13 +15,28 @@
 
 .main-footer__item {
   margin: 0 12px;
+
+  &:active {
+    & .main-footer__link-social {
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-footer__link-social {
-  fill: #666666;
+  display: block;
+  height: auto;
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
+  }
+}
+
+.main-footer__icon-social {
+  color: #666666;
 
   &:hover {
-    fill: #68b738;
+    color: #68b738;
   }
 }
 
@@ -34,11 +49,35 @@
 
 .main-footer__logo-font {
   justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-footer__logo-with-icon {
   text-decoration: none;
   padding-top: 20px;
+
+  &:hover {
+    & .developer-company-logo__icon {
+      color: #68b738;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -51,7 +90,8 @@
   }
 
   .main-footer__logo-with-icon {
-    padding-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .main-footer__list {

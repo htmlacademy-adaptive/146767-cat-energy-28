@@ -61,19 +61,23 @@
 }
 
 .food-options__link {
+  display: flex;
+  align-items: center;
   position: relative;
   text-decoration: none;
 
-  &::before {
-    position: absolute;
-    content: "";
-    width: 24px;
-    height: 12px;
-    right: -37px;
-    top: 2px;
-    background-image: url("../../../img/arrow-icon.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  &:hover {
+    & .food-options__link-icon {
+      width: 32px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
   }
 }
 
@@ -85,6 +89,12 @@
   line-height: 16px;
   text-transform: uppercase;
   color: @main-font-color;
+}
+
+.food-options__link-icon {
+  width: 24px;
+  transition: width 0.4s;
+  margin-left: 25px;
 }
 
 @media (min-width: @tablet-width) {

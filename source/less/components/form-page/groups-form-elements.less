@@ -17,6 +17,14 @@
 .groups-form-elements__input-field {
   margin-bottom: 14px;
 
+  &:hover {
+    cursor: pointer;
+
+    & .input-field__input-area {
+      border: 1px solid #cdcdcd;
+    }
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -24,6 +32,10 @@
   &--program-selection {
     padding: 6px 0;
     margin-bottom: 13px;
+
+    &:hover .input-field__input-radio {
+      border: 1px solid #bababa;
+    }
   }
 }
 

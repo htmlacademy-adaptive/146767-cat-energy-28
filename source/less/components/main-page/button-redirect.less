@@ -5,6 +5,14 @@
   background-color: @accent-background-color;
   text-decoration: none;
   text-align: center;
+
+  &:hover {
+    background-color: @accent-background-color-hover;
+  }
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
+  }
 }
 
 .button-redirect__text {
@@ -16,6 +24,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @secondary-font-color;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {

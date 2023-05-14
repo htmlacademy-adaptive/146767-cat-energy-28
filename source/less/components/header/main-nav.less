@@ -39,12 +39,25 @@
   text-decoration: none;
   padding-top: 24px;
   padding-bottom: 24px;
+
+  &:not(.main-nav__link--current):hover {
+    opacity: 0.6;
+  }
+
+  &:not(.main-nav__link--current):active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav__list {
     height: auto;
     flex-direction: row;
+    overflow: visible;
   }
 
   .main-nav__item {
