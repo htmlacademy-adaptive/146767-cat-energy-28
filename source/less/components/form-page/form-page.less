@@ -22,6 +22,10 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @main-font-color;
+
+  & br {
+    display: none;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -41,7 +45,7 @@
 
   .form-page__requirement {
     max-width: none;
-    width: 40%;
+    width: 45%;
     font-size: 20px;
     line-height: 30px;
     padding: 0;
@@ -64,6 +68,10 @@
     margin: 0 auto;
     margin-bottom: 66px;
     text-align: left;
+
+    & br {
+      display: block;
+    }
   }
 
   .form-page__header {

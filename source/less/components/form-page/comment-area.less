@@ -4,8 +4,8 @@
   width: 100%;
   height: 150px;
   padding-top: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 14px;
+  padding-right: 14px;
   padding-bottom: 10px;
   font-family: @header-font-family;
   font-style: normal;
@@ -15,10 +15,15 @@
   text-transform: uppercase;
   color: @main-light-font-color;
   border: 1px solid #e7e7e7;
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .comment-area {
+    height: 170px;
     font-size: 20px;
     line-height: 30px;
   }

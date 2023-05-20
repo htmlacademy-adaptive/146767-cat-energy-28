@@ -5,6 +5,10 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
+  }
 }
 
 .company-logo__icon {
@@ -21,6 +25,9 @@
   }
 
   &--footer-position {
+    width: 128px;
+    height: 24px;
+    object-fit: cover;
     margin: 0 auto;
     padding-top: 0;
     padding-bottom: 20px;
@@ -40,6 +47,7 @@
     }
 
     &--footer-position {
+      width: 143px;
       padding-top: 0;
       padding-bottom: 0;
     }
@@ -50,5 +58,15 @@
   .company-logo__icon {
     width: 70px;
     height: 60px;
+  }
+
+  .company-logo__font {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    &--header-position {
+      width: 120px;
+      height: auto;
+    }
   }
 }

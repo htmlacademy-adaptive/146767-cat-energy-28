@@ -43,6 +43,14 @@
 
 .main-header__logo-with-icon {
   width: 50%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -76,7 +84,7 @@
 
   .main-header__wrapper {
     padding: 0;
-    height: auto;
+    height: 53px;
     border: none;
   }
 
@@ -86,6 +94,7 @@
 
   .main-header__logo-with-icon {
     width: auto;
+    height: 50px;
   }
 }
 
@@ -113,6 +122,10 @@
         padding-top: 188px;
       }
     }
+  }
+
+  .main-header__wrapper {
+    height: 66px;
   }
 
   .main-header__container {

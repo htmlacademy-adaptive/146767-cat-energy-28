@@ -5,6 +5,30 @@
   background-color: @accent-background-color;
   text-decoration: none;
   text-align: center;
+
+  &:hover {
+    background-color: @accent-background-color-hover;
+  }
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
+  }
+
+  &--view-all {
+    display: none;
+    min-width: 170px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: @background-color-grayish;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+  }
+
+  &--nojs {
+    display: block;
+  }
 }
 
 .button-redirect__text {
@@ -16,10 +40,25 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @secondary-font-color;
+
+  &--view-all {
+    padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: @main-light-font-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .button-redirect__text {
-    padding: 14px 26px;
+    padding: 17px 26px;
+
+    &--view-all {
+      padding: 0;
+    }
   }
 }
