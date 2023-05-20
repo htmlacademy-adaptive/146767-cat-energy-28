@@ -7,10 +7,24 @@ const toggleMenuLineTop = document.getElementsByClassName('toggle-menu__line-top
 const toggleMenuLineBottom = document.getElementsByClassName('toggle-menu__line-bottom') [0];
 const toggleMenuLineCenterFirst = document.getElementsByClassName('toggle-menu__line-centre-first') [0];
 const toggleMenuLineCenterSecond = document.getElementsByClassName('toggle-menu__line-centre-second') [0];
+const buttonRedirectViewAll = document.getElementsByClassName('button-redirect--view-all') [0];
+const buttonEventViewAll = document.getElementsByClassName('button-event--view-all') [0];
 
 // Если js работает, то удаляем класс --nojs
 mainNav.classList.remove('main-nav--nojs');
 mainHeader.classList.remove('main-header--nojs');
+
+if (buttonRedirectViewAll !== undefined) {
+  buttonRedirectViewAll.classList.remove('button-redirect--nojs')
+} else {
+  console.log('Элемента нет!');
+};
+
+if (buttonEventViewAll !== undefined) {
+  buttonEventViewAll.classList.add('button-event--visible')
+} else {
+  console.log('Элемента нет!');
+};
 
 // Добавляет обработчик на событие "клик" для меню
 toggleMenu.addEventListener('click', function () {

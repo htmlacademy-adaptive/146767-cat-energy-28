@@ -15,6 +15,32 @@
   height: 100%;
   object-fit: contain;
   align-self: flex-end;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.product-card__redirect {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .product-card__image-wrapper {
@@ -23,6 +49,10 @@
   height: 110px;
   justify-content: center;
   align-items: flex-end;
+
+  &:focus {
+    outline: 2px solid @main-light-font-color;
+  }
 }
 
 .product-card__text-wrapper {
@@ -30,6 +60,7 @@
 }
 
 .product-card__header {
+  display: block;
   margin: 0;
   width: 60%;
   font-family: @header-font-family;

@@ -6,6 +6,14 @@
   border: none;
   background-color: @accent-background-color;
 
+  &--submitting-a-form {
+    margin-bottom: 20px;
+  }
+
+  &--product-card {
+    margin-top: 12px;
+  }
+
   &:hover {
     background-color: @accent-background-color-hover;
   }
@@ -21,6 +29,9 @@
   }
 
   &--view-all {
+    display: none;
+    text-decoration: none;
+    text-align: center;
     background-color: @background-color-grayish;
 
     &:hover {
@@ -28,12 +39,8 @@
     }
   }
 
-  &--submitting-a-form {
-    margin-bottom: 20px;
-  }
-
-  &--product-card {
-    margin-top: 12px;
+  &--visible {
+    display: block;
   }
 }
 
