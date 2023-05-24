@@ -58,6 +58,8 @@
     height: auto;
     padding-top: 10px;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     overflow: visible;
   }
 
@@ -86,6 +88,10 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    max-width: 50%;
+  }
+
   .main-nav__item {
     font-size: 20px;
     line-height: 30px;
@@ -95,18 +101,18 @@
     &--main-page-only {
       color: @secondary-font-color;
       transition: color 0.4s;
+    }
 
-      &.main-nav__link--current {
-        border-bottom: 2px solid @main-background-color;
-      }
+    &--main-page-only.main-nav__link--current {
+      border-bottom: 2px solid @main-background-color;
     }
 
     &--current {
       border-bottom: 2px solid #68b738;
+    }
 
-      &.main-nav__link--desktop-only {
-        border-bottom: 2px solid #68b738;
-      }
+    &--current.main-nav__link--desktop-only {
+      border-bottom: 2px solid #68b738;
     }
 
     &--desktop-only {

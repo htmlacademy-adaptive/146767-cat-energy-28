@@ -52,17 +52,17 @@
 
 .input-field__control-input {
   &:focus {
-    & + .input-field__input-radio {
+    + .input-field__input-radio {
       outline: 2px solid @main-light-font-color;
     }
 
-    & + .input-field__input-checkbox {
+    + .input-field__input-checkbox {
       outline: 2px solid @main-light-font-color;
     }
   }
 
   &:checked {
-    & + .input-field__input-radio::before {
+    + .input-field__input-radio::before {
       position: absolute;
       top: 9px;
       bottom: 0;
@@ -78,17 +78,17 @@
   }
 
   &:disabled {
-    & + .input-field__input-checkbox {
+    + .input-field__input-checkbox {
       opacity: 0.3;
       cursor: not-allowed;
     }
 
-    & + .input-field__input-radio {
+    + .input-field__input-radio {
       opacity: 0.3;
       cursor: not-allowed;
     }
 
-    & ~ .input-field__input-name {
+    ~ .input-field__input-name {
       opacity: 0.3;
       cursor: not-allowed;
     }
@@ -129,7 +129,7 @@
   &:focus {
     outline: 2px solid @main-light-font-color;
 
-    & + .input-field__input-icon {
+    + .input-field__input-icon {
       color: @accent-background-color;
     }
   }
@@ -137,7 +137,7 @@
   &:invalid:not(:placeholder-shown) {
     outline: 2px solid #ff8282;
 
-    & + .input-field__input-icon {
+    + .input-field__input-icon {
       color: #ff8282;
     }
   }
