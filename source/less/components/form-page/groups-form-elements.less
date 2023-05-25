@@ -20,7 +20,7 @@
   &:hover {
     cursor: pointer;
 
-    & .input-field__input-area {
+    .input-field__input-area {
       border: 1px solid #cdcdcd;
     }
   }
@@ -32,8 +32,10 @@
   &--program-selection {
     padding: 6px 0;
     margin-bottom: 13px;
+  }
 
-    &:hover .input-field__input-radio {
+  &--program-selection:hover {
+    .input-field__input-radio {
       border: 1px solid #bababa;
     }
   }
@@ -100,6 +102,7 @@
       margin: 0 auto;
       grid-template-columns: 1fr 1fr;
       column-gap: 80px;
+      row-gap: 40px;
     }
   }
 

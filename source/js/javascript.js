@@ -9,10 +9,15 @@ const toggleMenuLineCenterFirst = document.getElementsByClassName('toggle-menu__
 const toggleMenuLineCenterSecond = document.getElementsByClassName('toggle-menu__line-centre-second') [0];
 const buttonRedirectViewAll = document.getElementsByClassName('button-redirect--view-all') [0];
 const buttonEventViewAll = document.getElementsByClassName('button-event--view-all') [0];
+const locationMapImage = document.getElementsByClassName('location__map--image') [0];
+const locationMap = document.getElementsByClassName('location__map') [1];
 
-// Если js работает, то удаляем класс --nojs
+// Если js работает
 mainNav.classList.remove('main-nav--nojs');
 mainHeader.classList.remove('main-header--nojs');
+locationMap.classList.remove('location__map--nojs');
+
+locationMapImage.classList.add('location__map--hide');
 
 if (buttonRedirectViewAll !== undefined) {
   buttonRedirectViewAll.classList.remove('button-redirect--nojs')
