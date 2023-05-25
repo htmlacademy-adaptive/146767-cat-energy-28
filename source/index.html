@@ -195,14 +195,40 @@
           </div>
 
           <div class="example__image-container">
-            <picture>
-              <source media="(min-width: 1440px)" type="image/webp" srcset="img/tablet-losing-weight-cat.webp, img/tablet-losing-weight-cat@2x.webp 2x">
-              <source media="(min-width: 768px)" type="image/webp" srcset="img/tablet-losing-weight-cat.webp, img/tablet-losing-weight-cat@2x.webp 2x">
-              <source type="image/webp" srcset="img/losing-weight-cat.webp, img/losing-weight-cat@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/tablet-losing-weight-cat.png, img/tablet-losing-weight-cat@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/tablet-losing-weight-cat.png, img/tablet-losing-weight-cat@2x.png 2x">
-              <img class="example__image-comparison" src="img/losing-weight-cat.png" srcset="img/losing-weight-cat@2x.png 2x" width="280" height="256" alt="Пример худеющего котика: до и после.">
-            </picture>
+
+            <h2 class="visually-hidden">Сравнительный слайдер с двумя котами: до и после питания продукцией Cat Energy</h2>
+
+            <div class="image-comparison">
+              <div class="image-comparison__before">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="img/fat-cat.webp, img/fat-cat@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/fat-cat.webp, img/fat-cat@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile-fat-cat.webp, img/mobile-fat-cat@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/fat-cat.png, img/fat-cat@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/fat-cat.png, img/fat-cat@2x.png 2x">
+                  <img class="image-comparison__image" src="img/mobile-fat-cat.png" srcset="img/mobile-fat-cat@2x.png" width="280" height="256" alt="Пухлый котик.">
+                </picture>
+              </div>
+              <button class="image-comparison__slider" type="button">
+                <svg class="image-comparison__svg" width="40" height="40" viewBox="0 0 40 40" fill="none" aria-label="Кнопка-слайдер для сравнения картинок" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
+                  <path d="M16 11L8 20L16 29V11Z" fill="currentColor"/>
+                  <path d="M32 20L24 11V29L32 20Z" fill="currentColor"/>
+                  <rect x="1" y="1" width="38" height="38" rx="19" stroke="currentColor" stroke-width="2"/>
+                </svg>
+              </button>
+              <div class="image-comparison__after">
+                <picture>
+                  <source media="(min-width: 1440px)" type="image/webp" srcset="img/slim-cat.webp, img/slim-cat@2x.webp 2x">
+                  <source media="(min-width: 768px)" type="image/webp" srcset="img/slim-cat.webp, img/slim-cat@2x.webp 2x">
+                  <source type="image/webp" srcset="img/mobile-slim-cat.webp, img/mobile-slim-cat@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/slim-cat.png, img/slim-cat@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/slim-cat.png, img/slim-cat@2x.png 2x">
+                  <img class="image-comparison__image image-comparison__image--right" src="img/mobile-slim-cat.png" srcset="img/mobile-slim-cat@2x.png" width="280" height="256" alt="Худеющий котик.">
+                </picture>
+              </div>
+            </div>
+
           </div>
 
         </div>
